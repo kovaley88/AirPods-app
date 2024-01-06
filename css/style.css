@@ -278,5 +278,157 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1468px) {
+  .header__content-images img {
+    max-width: 100%;
+  }
+  .chose-color__list {
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 180px;
+    transform: translate(129px, 29px);
+  }
+}
+
+@media (max-width: 1348px) {
+  .title {
+    transform: none;
+    font-size: 140px;
+    padding-top: 20vh;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  .title--pod {
+    z-index: 1;
+  }
+  .title--s {
+    transform: none;
+  }
+  .title--m {
+    transform: none;
+  }
+  .title--ax {
+    transform: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .chose-color__list {
+    flex-wrap: wrap;
+  }
+  .main__title {
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 930px) {
+  .title {
+    position: relative;
+    font-size: 100px;
+    padding-top: 20px;
+  }
+  .title--m {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+  .choose-color {
+    padding-bottom: 60px;
+  }
+  .chose-color__list {
+    gap: 16px;
+  }
+  .main__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .composition {
+    margin-bottom: 60px;
+  }
+  .case {
+    margin: 60px 0;
+  }
+  .energi__title {
+    padding-top: 60px;
+    margin-bottom: 20px;
+  }
+  .energy__num {
+    font-size: 130px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 560px) {
+  .img__top {
+    width: 40px;
+  }
+  .choose-color__text {
+    margin-bottom: 40px;
+  }
+  .choose-color {
+    padding-bottom: 40px;
+  }
+  .main__title {
+    line-height: 40px;
+  }
+  .case {
+    padding: 40px 0;
+  }
+  .composition__inner-text p {
+    width: 100%;
+  }
+  .composition__inner {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+  .menu__list {
+    flex-wrap: wrap;
+    gap: 20px 40px;
+  }
+  .menu__item-btn {
+    margin-left: auto;
+  }
+  .menu__item-btn button {
+    width: 250px;
+  }
+  .menu__item:first-child {
+    margin-left: auto;
+  }
+  .header__top {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 414px) {
+  .main__title,
+  .choose-color__title {
+    font-size: 28px;
+  }
+  .energy__num {
+    font-size: 92px;
+  }
+  .case img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 404px) {
+  .title {
+    font-size: 50px;
+  }
 }
