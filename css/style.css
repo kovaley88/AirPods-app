@@ -49,6 +49,14 @@ ul {
   margin-bottom: 45px;
 }
 
+.content-item {
+  display: none;
+}
+
+.content-item.content-active {
+  display: inline-block;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -148,6 +156,10 @@ ul {
   border: 1px solid #777;
   padding: 50px 55px;
   background-color: #fff;
+}
+
+.choose-color-active {
+  display: none;
 }
 
 .composition {
@@ -283,9 +295,9 @@ ul {
 }
 
 @media (max-width: 1468px) {
-  .header__content-images img {
+  /* .header__content-images img {
     max-width: 100%;
-  }
+  } */
   .chose-color__list {
     flex-wrap: wrap;
   }

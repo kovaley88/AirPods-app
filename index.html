@@ -15,10 +15,9 @@
 </head>
 
 <body>
+  <!-- header -->
   <div class="header">
     <div class="container">
-
-
       <div class="header__top">
         <a href="#" class="logo">
           <img class="img__top" src="images/logo.svg" alt="logo.site">
@@ -52,11 +51,11 @@
         </h1>
 
         <div class="header__content-images">
-          <img src="images/airpods-red.png" alt="logo">
-          <!-- <img src="images/airpods-blue.png" alt="logo">
-          <img src="images/airpods-black.png" alt="logo">
-          <img src="images/airpods-green.png" alt="logo">
-          <img src="images/airpods-white.png" alt="logo"> -->
+          <img class="content-item color-red content-active" src="images/airpods-red.png" alt="logo">
+          <img class="content-item color-blue" src="images/airpods-blue.png" alt="logo">
+          <img class="content-item color-black" src="images/airpods-black.png" alt="logo">
+          <img class="content-item color-green" src="images/airpods-green.png" alt="logo">
+          <img class="content-item color-white" src="images/airpods-white.png" alt="logo">
         </div>
 
       </div>
@@ -75,17 +74,20 @@
           The ultimate personal audio experience.
         </p>
         <div class="chose-color__list">
-          <button class="choose-color__btn">
+          <button class="choose-color__btn" data-color="color--gren">
             <img src="images/btn-green.png" alt="">
           </button>
-          <button class="choose-color__btn">
+          <button class="choose-color__btn" data-color="color--blue">
             <img src="images/btn-blue.png" alt="">
           </button>
-          <button class="choose-color__btn">
+          <button class="choose-color__btn" data-color="color--white">
             <img src="images/btn-white.png" alt="">
           </button>
-          <button class="choose-color__btn">
+          <button class="choose-color__btn" data-color="color--black">
             <img src="images/btn-black.png" alt="">
+          </button>
+          <button class="choose-color__btn choose-color-active" data-color="color--red">
+            <img src="images/btn-red.png" alt="">
           </button>
         </div>
       </div>
@@ -115,11 +117,11 @@
               The telescoping arms expand and stay in any position you want, allowing you to maintain fit and isolation.
             </p>
           </div>
-          <img src="images/side-red.jpg" alt="">
-          <!-- <img src="images/side-blue.jpg" alt="">
-          <img src="images/side-white.jpg" alt="">
-          <img src="images/side-green.jpg" alt="">
-          <img src="images/side-black.jpg" alt=""> -->
+          <img class="content-item color-red content-active" src="images/side-red.jpg" alt="">
+          <img class="content-item color-blue" src="images/side-blue.jpg" alt="">
+          <img class="content-item color-white" src="images/side-white.jpg" alt="">
+          <img class="content-item color-green" src="images/side-green.jpg" alt="">
+          <img class="content-item color-black" src="images/side-black.jpg" alt="">
 
         </div>
       </div>
@@ -135,11 +137,11 @@
           When stored in the sleek and lightweight <span id="smart">Smart Case</span> , AirPods Max enter a low-power
           state to save energy.
         </p>
-        <img src="images/case-red.jpg" alt="">
-        <!-- <img src="images/case-blue.jpg" alt="">
-        <img src="images/case-green.jpg" alt="">
-        <img src="images/case-white.jpg" alt="">
-        <img src="images/case-black.jpg" alt=""> -->
+        <img class="content-item color-red content-active" src="images/case-red.jpg" alt="">
+        <img class="content-item color-blue " src="images/case-blue.jpg" alt="">
+        <img class="content-item color-green " src="images/case-green.jpg" alt="">
+        <img class="content-item color-white " src="images/case-white.jpg" alt="">
+        <img class="content-item color-black " src="images/case-black.jpg" alt="">
         <h2 class="energi__title main__title">
           Stayin' alive, stayin' alive.
         </h2>
