@@ -1,4 +1,4 @@
-const chooseColor = document.querySelectorAll('.choose-color__btn');
+const chooseColor = Array.from(document.querySelectorAll('.choose-color__btn'));
 const contentItem = document.querySelectorAll('.content-item');
 
 console.log(chooseColor);
@@ -12,11 +12,13 @@ function open(ev) {
     const target = ev.currentTarget;
     const button = target.dataset.color;
     const contentActive = document.querySelectorAll(`.${button}`);
-    console.log(contentActive)
-
-    chooseColor.forEach(function (item) {
-        item.classList.remove('choose-color-active');
+    const activeColor = chooseColor.find(function (item) {
+        return item.classList.contains('choose-color-active');
     });
+    activeColor.classList.remove("choose-color-active")
+
+
+
 
     target.classList.add('choose-color-active');
 
